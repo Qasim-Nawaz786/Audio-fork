@@ -914,7 +914,7 @@ static int audiofork_exec(struct ast_channel *chan, const char *data)
 	struct ast_flags flags = { 0 };
 	char *parse;
 	char *tcert = NULL;
-	int reconn_timeout = 5;
+	int reconn_timeout = 15; // default 15 seconds
 	int reconn_attempts = 5;
 	AST_DECLARE_APP_ARGS(args, 
 		AST_APP_ARG(wsserver);
